@@ -160,7 +160,6 @@ export default function Home() {
               </span>
             </Typography>
           </Box>
-          {/* Repeat for other FAQs */}
           <Box bgcolor="#FFFFFFA7" border="1px solid #CBD5E0" borderRadius="14px" padding="27px" width="100%">
             <Typography variant="h4" fontWeight="bold" textAlign="center" className="leading-17px mt-0.5 md:text-3xl sm:text-28px text-32px text-black-900">
               <span className="md:text-22px sm:text-xl text-orange-500 font-poppins text-2xl font-medium">3. Q : Est-ce sécuritaire d&#39;utiliser des liens raccourcis ?<br />R</span>
