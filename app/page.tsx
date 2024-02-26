@@ -131,8 +131,8 @@ export default function Home() {
                       culpa qui officia deserunt mollit anim id es</Typography>
           </Box>
           <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgcolor="#FFFFFF" marginTop="12px" padding="4px" borderRadius="12px">
-            <img src="images/img_ellipse1.png" alt="ellipseOne" style={{ height: '97px', width: '97px', borderRadius: '50%' }} />
-            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="5px">Cody Fisher</Typography>
+            <img src="images/img_ellipse2.png" alt="ellipseOne" style={{ height: '97px', width: '97px', borderRadius: '50%' }} />
+            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="5px">Kristen Watson</Typography>
             <Typography variant="body1" textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore
                       <br />
@@ -146,8 +146,8 @@ export default function Home() {
                       culpa qui officia deserunt mollit anim id es</Typography>
           </Box>
           <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgcolor="#FFFFFF" marginLeft="50px"  marginTop="50px"padding="4px" borderRadius="12px">
-            <img src="images/img_ellipse1.png" alt="ellipseOne" style={{ height: '97px', width: '97px', borderRadius: '50%' }} />
-            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="5px">Cody Fisher</Typography>
+            <img src="images/img_ellipse3.png" alt="ellipseOne" style={{ height: '97px', width: '97px', borderRadius: '50%' }} />
+            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="5px">Jerome Bell</Typography>
             <Typography variant="body1" textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore
                       <br />
