@@ -2,6 +2,7 @@
 import Button from "@mui/material/Button";
 import Input from "@mui/material/Input";
 import { Box, TextField, Typography } from '@mui/material';
+import { relative } from "path";
 
 
 export default function Home() {
@@ -114,11 +115,12 @@ export default function Home() {
         <Box display="flex" justifyContent="center" marginTop="5px">
           <Typography variant="h3" fontWeight="bold">Ce que disent nos visiteurs</Typography>
         </Box>
-        <Box display="flex" flexDirection="row" justifyContent="space-around" marginTop="10px">
-          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgcolor="#FFFFFF" marginRight="50px"  marginTop="50px" padding="4px" borderRadius="12px">
-            <img src="images/img_ellipse1.png" alt="ellipseOne" style={{ height: '97px', width: '97px', borderRadius: '50%' }} />
-            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="5px">Cody Fisher</Typography>
-            <Typography variant="body1" textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        <Box display="flex" flexDirection="row" justifyContent="space-around" marginTop="5rem">
+          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgcolor="#FFFFFF" marginRight="50px"  marginTop="50px" paddingBottom="1rem" borderRadius="12px">
+            <Box justifyContent="center" display="flex" alignItems="center" paddingBottom="1.5rem"> 
+            <img src="images/img_ellipse1.png" alt="ellipseOne" style={{position:"absolute",objectFit:"cover", height: '97px',marginBottom:"3.5rem", width: '97px', borderRadius: '50%' }} /></Box>
+            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="2rem">Cody Fisher</Typography>
+            <Typography variant="body1" textAlign="center" sx={{marginTop:"2rem"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore
                       <br />
                       <p style={{marginTop:"20px"}}>Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -130,10 +132,12 @@ export default function Home() {
                       Excepteur sint occaecat cupidatat non proident, sunt in
                       culpa qui officia deserunt mollit anim id es</Typography>
           </Box>
-          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgcolor="#FFFFFF" marginTop="12px" padding="4px" borderRadius="12px">
-            <img src="images/img_ellipse2.png" alt="ellipseOne" style={{ height: '97px', width: '97px', borderRadius: '50%' }} />
-            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="5px">Kristen Watson</Typography>
-            <Typography variant="body1" textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgcolor="#FFFFFF" marginTop="12px" paddingBottom="1rem" borderRadius="12px">
+            <Box justifyContent="center" display="flex" alignItems="center" paddingBottom="1.5rem">
+            <img src="images/img_ellipse2.png" alt="ellipseOne" style={{position:"absolute", height: '97px',marginBottom:"4.5rem", width: '97px', borderRadius: '50%' }} />
+            </Box>
+            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="2rem">Kristen Watson</Typography>
+            <Typography variant="body1" textAlign="center" sx={{marginTop:"2rem"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore
                       <br />
                       <p style={{marginTop:"20px"}}>Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -145,10 +149,12 @@ export default function Home() {
                       Excepteur sint occaecat cupidatat non proident, sunt in
                       culpa qui officia deserunt mollit anim id es</Typography>
           </Box>
-          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgcolor="#FFFFFF" marginLeft="50px"  marginTop="50px"padding="4px" borderRadius="12px">
-            <img src="images/img_ellipse3.png" alt="ellipseOne" style={{ height: '97px', width: '97px', borderRadius: '50%' }} />
-            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="5px">Jerome Bell</Typography>
-            <Typography variant="body1" textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgcolor="#FFFFFF" marginLeft="50px"  marginTop="50px" paddingBottom="4.5rem" borderRadius="12px">
+            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" paddingBottom="1.5rem">
+            <img src="images/img_ellipse3.png" alt="ellipseOne" style={{ position:"absolute", height: '97px', width: '97px', borderRadius: '50%', marginBottom:"1rem" }} />
+            </Box>
+            <Typography variant="body1" fontWeight="bold" textAlign="center" marginTop="2rem">Jerome Bell</Typography>
+            <Typography variant="body1" textAlign="center"sx={{marginTop:"2rem"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore
                       <br />
                       <p style={{marginTop:"20px"}}>Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -165,47 +171,47 @@ export default function Home() {
     </section>
     <section>
       <Box bgcolor="#F9FAFB" display="flex" flexDirection="column" alignItems="center" justifyContent="flex-start" padding="46px" maxWidth="100%" width="100%">
-        <Typography variant="h3" fontWeight="bold" textAlign="center" className="text-4xl sm:text-32px md:text-34px text-black-900">FAQ</Typography>
+        <Typography variant="h3" fontWeight="bold" textAlign="center" >FAQ</Typography>
         <Box display="flex" flexDirection="column" gap="37px" alignItems="center" justifyContent="flex-start" maxWidth="1230px" marginBottom="25px" marginTop="37px" marginLeft="auto" marginRight="auto" padding="27px" width="100%">
-          <Box bgcolor="#FFFFFFA7" border="1px solid #CBD5E0" borderRadius="14px" padding="27px" width="100%">
-            <Typography variant="h4" fontWeight="bold" textAlign="center" className="leading-17px mt-0.5 md:text-3xl sm:text-28px text-32px text-black-900">
+          <Box bgcolor="#FFFFFFA7" border="1px solid #CBD5E0" borderRadius="14px" boxShadow="4px 4px 4px rgba(0, 0, 0, 0.25)" padding="27px" width="100%">
+            <Typography variant="h4" fontWeight="bold" textAlign="center" >
               <span style={{color:"#FF7F2A"}}>1. Q : Pourquoi raccourcir un lien ?<br />R</span>
-              <span className="md:text-22px sm:text-xl text-gray-600 font-poppins text-2xl font-light"> </span>
-              <span className="md:text-22px sm:text-xl text-yellow-900 font-poppins text-2xl font-medium">:</span>
-              <span className="md:text-22px sm:text-xl text-gray-600 font-poppins text-2xl font-light">
+              <span > </span>
+              <span >:</span>
+              <span >
                 Les liens raccourcis sont plus esthétiques et prennent moins de place. Ils sont souvent utilisés sur les plateformes de médias sociaux où l&#39;espace est limité.
               </span>
             </Typography>
           </Box>
           {/* Repeat for other FAQs */}
-          <Box bgcolor="#FFFFFFA7" border="1px solid #CBD5E0" borderRadius="14px" padding="27px" width="100%">
+          <Box bgcolor="#FFFFFFA7" border="1px solid #CBD5E0" borderRadius="14px" padding="27px" width="100%" boxShadow="4px 4px 4px rgba(0, 0, 0, 0.25)">
             <Typography variant="h4" fontWeight="bold" textAlign="center" className="leading-17px mt-0.5 md:text-3xl sm:text-28px text-32px text-black-900">
               <span style={{color:"#FF7F2A"}}>2. Q : Quels sont les avantages de raccourcir un lien ?<br />R</span>
-              <span className="md:text-22px sm:text-xl text-gray-600 font-poppins text-2xl font-light"> </span>
-              <span className="md:text-22px sm:text-xl text-yellow-900 font-poppins text-2xl font-medium">:</span>
-              <span className="md:text-22px sm:text-xl text-gray-600 font-poppins text-2xl font-light">
+              <span > </span>
+              <span >:</span>
+              <span >
                 Amélioration de l&#39;esthétique des liens <br />
                 Économie d&#39;espace sur les supports limités en caractères <br />
                 Suivi des clics pour évaluer la popularité ou l&#39;efficacité du lien
               </span>
             </Typography>
           </Box>
-          <Box bgcolor="#FFFFFFA7" border="1px solid #CBD5E0" borderRadius="14px" padding="27px" width="100%">
+          <Box bgcolor="#FFFFFFA7" border="1px solid #CBD5E0" borderRadius="14px" padding="27px" width="100%" boxShadow="4px 4px 4px rgba(0, 0, 0, 0.25)">
             <Typography variant="h4" fontWeight="bold" textAlign="center" className="leading-17px mt-0.5 md:text-3xl sm:text-28px text-32px text-black-900">
               <span style={{color:"#FF7F2A"}}>3. Q : Est-ce sécuritaire d&#39;utiliser des liens raccourcis ?<br />R</span>
-              <span className="md:text-22px sm:text-xl text-gray-600 font-poppins text-2xl font-light"> </span>
-              <span className="md:text-22px sm:text-xl text-yellow-900 font-poppins text-2xl font-medium">:</span>
-              <span className="md:text-22px sm:text-xl text-gray-600 font-poppins text-2xl font-light">
+              <span > </span>
+              <span >:</span>
+              <span >
                 En général, oui. Cependant, soyez conscient que les liens raccourcis peuvent masquer la destination réelle, ce qui pourrait être exploité à des fins malveillantes. Utilisez des services réputés pour minimiser les risques.
               </span>
             </Typography>
           </Box>
         </Box>
-        <Box bgcolor="#FFFFFFA7" display="flex" flexDirection="column" alignItems="center" justifyContent="flex-start" padding="2px" width="100%" boxShadow="4px 4px 4px rgba(0, 0, 0, 0.25)">
-          <Box display="flex" alignItems="center" justifyContent="space-between" padding="4px">
-            <Box display="flex" flexDirection="column" gap="8px" alignItems="flex-start" justifyContent="flex-start" marginBottom="3px" marginTop="55px" width="568px">
-              <Box display="flex" flexDirection="column" gap="3" alignItems="flex-start" justifyContent="flex-start" width="100%">
-                <Typography variant="h4" fontWeight="semibold" className="md:text-3xl sm:text-28px text-32px text-black-900">
+        <Box bgcolor="#FFFFFFA7" display="flex" flexDirection="column" alignItems="center" justifyContent="flex-start"  width="100%" >
+          <Box display="flex" alignItems="center" justifyContent="space-between" >
+            <Box display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" marginBottom="3px" marginTop="55px" width="100%">
+              <Box display="flex" flexDirection="column" marginRight="100px" alignItems="flex-start" justifyContent="flex-start" width="100%">
+                <Typography variant="h4" fontWeight="bold">
                   <>
                     Reduisez la longueur de vos liens <br />
                     d’un seul clic !
