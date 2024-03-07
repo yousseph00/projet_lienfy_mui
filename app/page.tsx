@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <section>
-      <div style={{backgroundColor:"#f0f0f0", display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"flex-start",padding:"20px",width:"100%"}}>
+      <div style={{backgroundColor:"#FFF7F2", display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"flex-start",padding:"20px",width:"100%"}}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <div style={{ display: 'flex', flex: '1', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', marginTop: '6px', maxWidth: '100%', width: '100%' }}>
             <p style={{ lineHeight: '55px', fontSize: '5xl', color: '#000' }}>
@@ -76,7 +76,7 @@ export default function Home() {
               </Box>
             </Box>
           </Box>
-          <Box bgcolor="#FF9800" display="flex" flexDirection="column" gap="11px" alignItems="center" justifyContent="center" padding="7px" borderRadius="12px" width="75%" maxWidth="100%">
+          <Box bgcolor="#FFF7F2" display="flex" flexDirection="column" gap="11px" alignItems="center" justifyContent="center" padding="7px" borderRadius="12px" width="75%" maxWidth="100%">
             <Typography variant="h6" color="text.secondary" gutterBottom>
               Facilité
             </Typography>
@@ -86,7 +86,7 @@ export default function Home() {
             </Typography>
           </Box>
           <Box display="flex" gap="19px" alignItems="center" justifyContent="space-around" width="100%">
-            <Box display="flex" flexDirection="column" alignItems="center" bgcolor="#FF9800"  position="relative" height="241px" width="100%" maxWidth="100%" borderRadius="14px">
+            <Box display="flex" flexDirection="column" alignItems="center" bgcolor="#FFF7F2"  position="relative" height="241px" width="100%" maxWidth="100%" borderRadius="14px">
                 <Typography variant="h6" color="text.secondary" gutterBottom style={{marginTop:"15px"}}>
                   Optimisation
                 </Typography>
@@ -95,7 +95,7 @@ export default function Home() {
                 Une solution pour optimiser l&#39;information face aux limites de caractères posées par certains canaux de communication. Notre plateforme vous aide à élargir l&#39;étendue de votre message et captiver votre cible par des liens simples et attractifs
               </Typography>
             </Box>
-            <Box bgcolor="#FF9800" display="flex" flexDirection="column" alignItems="center" justifyContent="center" padding="3px" borderRadius="14px" width="100%" maxWidth="100%" marginTop="12px">
+            <Box bgcolor="#FFF7F2" display="flex" flexDirection="column" alignItems="center" justifyContent="center" padding="3px" borderRadius="14px" width="100%" maxWidth="100%" marginTop="12px">
               <Typography variant="h6" color="text.secondary" gutterBottom>
                 Fiabilité
               </Typography>

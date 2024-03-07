@@ -10,9 +10,9 @@ const loginPage: React.FC = () => {
   };
   const { user, googleSignIn, logOut } = UserAuth();
 
-  const handleSignOut = async () => {
+  const handleSignIn = async () => {
     try {
-      await logOut();
+      await googleSignIn();
     } catch (error) {
       console.log(error);
     }
@@ -50,7 +50,7 @@ const loginPage: React.FC = () => {
             <Typography  variant="h4" gutterBottom style={{ textAlign: 'center', marginBottom: '20px',fontWeight:"500" }}>
               Connexion <br /><span style={{color:"#6D6D6D", font:"Poppins", fontWeight:"400px",marginTop: "2px", fontSize:"18px"}}>connectez-vous et raccourcissez vos lien</span>
             </Typography>
-            <Button onClick={handleSignOut} variant="outlined" color="primary" style={{color:"#000000",fontWeight:"500px",font:"poppins", marginBottom: '20px' }}>
+            <Button onClick={handleSignIn} variant="outlined" color="primary" style={{color:"#000000",fontWeight:"500px",font:"poppins", marginBottom: '20px' }}>
              <img src="images/Google.png" alt="Google" style={{paddingRight:"1rem"}} /> Se connecter avec Google
             </Button>
             <form onSubmit={handleSubmit}>

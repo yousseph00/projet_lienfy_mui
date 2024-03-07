@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Link, List, ListItem, } from '@mui/material';
+import { Link, List } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
@@ -24,17 +24,21 @@ const Header = () => {
         <img src="/images/img_logopng.png" alt="logopng" style={{ height: '40px' }} />
         </div>
         <div style={{color:"#FFFFFF"}}>
-        <List sx={{ display: 'flex', color:"#FFFFFF" }}>
-      <ListItem> 
-      <Link href="/">      
-        <Typography variant="body1" style={{ color: '#FF7F2A', textDecoration: 'none' }}>Accueil</Typography>
-      </Link>
-      <ListItem>
-        <Typography variant="body1" style={{ color: '#FFFFFF', textDecoration: 'none' }}>Mes liens</Typography>  
-      </ListItem>
-        <Typography variant="body1" style={{ color: '#FFFFFF', textDecoration: 'none' }}>Blog</Typography>
-      </ListItem>
-    </List>
+        <div>
+        <div style={{ display: 'flex',flexDirection:"row", color:"#FFFFFF" }}> 
+          <List style={{display: 'flex',flexDirection:"row", gap:"10px"}}> 
+          <Link href="/" style={{textDecoration:"none"}}>      
+            <Typography variant="body1" style={{ color: '#FF7F2A'}}>Accueil</Typography>
+          </Link>
+          <Link href="/" style={{textDecoration:"none"}}>
+            <Typography variant="body1" style={{ color: '#FFFFFF'}}>Mes liens</Typography>
+          </Link>  
+          <Link href="/" style={{textDecoration:"none"}}>
+            <Typography variant="body1" style={{ color: '#FFFFFF'}}>Blog</Typography>
+          </Link>
+          </List>
+        </div>
+        </div>
         </div>
         <div >
         {!user ? (
