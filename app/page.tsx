@@ -32,7 +32,7 @@ export default function Home() {
             </Button>
           </div>
           <div style={{ flex: '1', maxWidth: '100%', height: 'auto', objectFit: 'cover', borderRadius: '126px', width: '100%' }}>
-            <img src="images/img_background.png" alt="454ff04e4b8d37e" style={{ flex: '1', maxWidth: '100%', height: 'auto', objectFit: 'cover', borderRadius: '126px 0 126px 0', width: '100%' }}/>
+            <img src="images/img_454ff04e4b8d37e.png" alt="454ff04e4b8d37e" style={{ flex: '1', maxWidth: '100%', height: 'auto', objectFit: 'cover', borderRadius: '126px 0 126px 0', width: '100%' }}/>
           </div>
         </div>
       </div>
